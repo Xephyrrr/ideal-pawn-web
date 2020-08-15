@@ -1,0 +1,74 @@
+{
+  "name": "ideal",
+  "homepage": "./",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "@react-google-maps/api": "^1.9.7",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "framer-motion": "^1.11.1",
+    "google-maps-react": "^2.0.2",
+    "gulp-cli": "^2.2.0",
+    "instafeed-lite": "^1.0.10",
+    "mapbox-gl": "^1.8.1",
+    "prop-types": "^15.7.2",
+    "raf": "^3.4.1",
+    "react": "^16.8.0",
+    "react-alice-carousel": "^1.17.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-announcement": "^1.1.2",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-instagram-embed": "^1.5.0",
+    "react-parallax": "^3.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-scroll": "^1.7.16",
+    "react-scrollmagic": "^2.1.1",
+    "react-svg": "^11.0.9",
+    "react-tilt": "^0.1.4",
+    "react-transition-group": "^4.3.0",
+    "social-media-icons-react": "^1.0.10",
+    "svg-path-bounds": "^1.0.1",
+    "vanilla-swipe": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

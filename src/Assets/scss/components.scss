@@ -1,0 +1,56 @@
+@import '_config';
+
+.policyMenu{
+  position: relative;
+  display: block;
+  width: 100%;
+  background: $white;
+  color: $black;
+  height: 69px;
+
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position:absolute;
+    top: 55%; left: 30px;
+    @include translateY(-50%);
+
+    ul{
+      .home{
+          color: $black;
+      }
+    }
+
+    ul li {
+      letter-spacing: 2px;
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 25px;
+
+
+
+      .active{
+        color: $gd;
+      }
+
+
+      &.last{
+        margin: 0;
+      }
+
+
+      a{
+        font-size: 12px;
+        line-height: normal;
+        color: $dg1;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,99 @@
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$light: #F5F4F1;
+$dark: #231F20;
+$darkGrey: #333;
+$red: #ff1755;
+$dg1: #23533B;
+$gd: #C6B28D;
+$ow: #F4F8F5;
+$secondary: #EFEFEF;
+@font-face{
+font-family:  tiemposR;
+src: url(/fonts/TiemposTextTest-Regular.otf);
+}
+@font-face{
+font-family:  tiemposRi;
+src: url(/fonts/TiemposTextTest-RegularItalic.otf);
+}
+@font-face{
+font-family:  tiemposB;
+src: url(/fonts/TiemposTextTest-Bold.otf);
+}
+@font-face{
+font-family:  tiemposBi;
+src: url(/fonts/TiemposTextTest-BoldItalic.otf);
+}
+@font-face{
+font-family:  tiemposSB;
+src: url(/fonts/TiemposTextTest-Semibold.otf);
+}
+@font-face{
+font-family:  tiemposSBi;
+src: url(/fonts/TiemposTextTest-SemiboldItalic.otf);
+}
+@font-face{
+font-family:  tiemposM;
+src: url(/fonts/TiemposTextTest-Medium.otf);
+}
+@font-face{
+font-family:  tiemposMi;
+src: url(/fonts/TiemposTextTest-MediumItalic.otf);
+}
+
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+
+@mixin rotate($e) {
+  transform: rotate($e);
+  -webkit-transform: rotate($e);
+  -moz-transform: rotate($e);
+  -ms-transform: rotate($e);
+  -o-transform: rotate($e);
+}
+
+@mixin translateX($e) {
+  -webkit-transform: translateX($e);
+  -moz-transform: translateX($e);
+  transform: translateX($e);
+}
+
+@mixin transition($e){
+  -webkit-transition:$e;
+  -moz-transition:$e;
+  transition:$e;
+}
+
+body {
+  font-family: 'tiemposR';
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  background-color: #F5F4F1;
+
+
+
+  h1{
+    font-family: 'tiemposM';
+    font-size: 10px;
+    color: $black;
+    font-weight: 400;
+  }
+
+  a{
+    text-decoration: none;
+    @include transition(.3s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: $gd;
+      @include transition(.3s ease-in-out);
+    }
+  }
+}
