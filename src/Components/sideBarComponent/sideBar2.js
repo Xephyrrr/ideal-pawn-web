@@ -110,6 +110,7 @@ class SideBar2 extends Component {
                       fontSize:15,
                       marginBottom:10,
                       minWidth: '500px',
+                      fontFamily: 'tiemposSB'
                     }}>On the left side of Northcrest Rd near Spaghetti Junctinon and I-85</div>
                   <div className='side_map_main'>
                   <Directions />

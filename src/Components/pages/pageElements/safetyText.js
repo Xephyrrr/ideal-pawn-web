@@ -12,7 +12,7 @@ function SafetyTxt(){
         Always keep the gun pointed in a safe direction.<hr align="left" />
         Always keep your finger off the trigger until you are ready to shoot.<hr align="left"/>
         Always keep the gun unloaded until ready to safely use.<hr align="left"/>
-        Always keep the gun unloaded until ready to safely use.<hr align="left"/>
+        Be sure of your target and what is behind it.<hr align="left"/>
       </div>
     </div>
 

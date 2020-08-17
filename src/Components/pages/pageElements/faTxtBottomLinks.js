@@ -6,7 +6,7 @@ function FaTxtBottomLinks(){
     <div className="faBottomLinksGrid">
       <div className="faBottomContent">
         <h1>
-          Useful Gun Safety And Law Links
+          Useful Law And Gun Safety Info
         </h1>
         <div className="faBottomVl" />
         <div className="faBottomLinks">

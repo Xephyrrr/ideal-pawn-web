@@ -13,7 +13,7 @@ class MainSlider extends React.Component {
            <video autoplay="on" loop muted>
               <source src="./images/slides/1920.mp4" type="video/mp4"/>
            </video>
-
+           <Scroll />
        </div>
 
     );

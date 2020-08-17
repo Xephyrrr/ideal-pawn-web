@@ -6,7 +6,7 @@ function FaTxtBottomInfo(){
     <div className="faBottomInfoGrid">
       <div className="faBottomInfo">
         <h1>
-          Useful Information
+          More Useful Information
         </h1>
 
         <div className="faBottomTxt">
