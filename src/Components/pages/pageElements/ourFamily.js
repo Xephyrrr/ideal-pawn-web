@@ -6,7 +6,9 @@ class OurFamily extends React.Component {
       <div className="ourFamGrid">
         <div className='ourFamImgs'>
           <h1>Our Family</h1>
+
           <div className='famImgsFlex'>
+
             <div className="famImgsWrap">
               <img src='/images/Group45.png' id="fam1"/>
               <div className="aboutNames">Ben Zager</div>

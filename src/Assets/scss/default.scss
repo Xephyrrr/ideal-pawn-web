@@ -205,18 +205,23 @@
 
     }
     .rack_feed{
-
+      display: flex;
+      justify-content: center;
       .rack_wrap_img{
+        width: 60%;
         display: flex;
         justify-content: center;
-        .Tilt{
-          padding: 2vw;
-          transform-style: preserve-3d;
-          img{
-            height: auto;
-            width: 15vw;
-            min-width: 200px;
+        flex-wrap: wrap;
+        a{
+          .Tilt{
+            padding: 2vw;
+            transform-style: preserve-3d;
+            img{
+              height: auto;
+              width: 15vw;
+              min-width: 200px;
 
+            }
           }
         }
       }
@@ -594,8 +599,11 @@
           padding-right: 90px;
           padding-top: 75px;
           padding-bottom: 75px;
+          font-family: tiemposRi;
+          a:hover{
+            color: $gd;
 
-
+          }
         }
       }
     }
@@ -895,8 +903,254 @@
 
 }
 
-//--------
+//--------//
+//--------Sell Page Grid
 
+.sell-grid{
+  display: grid;
+  grid-template-columns: 67% 33%;
+  grid-template-rows: 52vh 48vh 31vh 91vh 16vh 59vh;
+  grid-template-areas:
+  "sellImage sellImage"
+  "sellInfo sellInfo"
+  "sellBanner sellBanner"
+  "hotItems hotItems"
+  "sellMargin sellMargin"
+  "valuables valuablesImg"
+  ;
+
+  .sellWrap{
+    grid-area: sellInfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sellHeader{
+      font-size: 55px;
+      color: #565F47;
+      font-family: tiemposM;
+    }
+    .sellText{
+      font-size: 22px;
+      width: 900px;
+      text-align: center;
+      color: #565F47;
+    }
+  }
+
+
+  .sell-banner{
+    grid-area: sellBanner;
+    width: 100%;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 99vw;
+      height:  auto;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+
+  .hotItemsGrid{
+    grid-area: hotItems;
+    background-color: $dark;
+    .hotItemWrap{
+
+      .hotItemsHeader{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+          font-size: 45px;
+          color: $gd;
+
+        }
+        .hotItemsSubTitle{
+          text-align: center;
+          color: $light;
+        }
+
+
+      }
+      .hotItems{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        .hotItemContainer{
+          height: 58vh;
+          background-color: red;
+          overflow: hidden;
+          img{
+            height: 58vh;
+            width: auto;
+          }
+          ul{
+
+            li{
+
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+
+
+  .sellImgGrid{
+    grid-area: sellImage;
+    .scroll-container{
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      padding-bottom: 10px;
+
+
+      span{
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-bottom: 4px solid #F5F4F1;
+        border-right: 4px solid #F5F4F1;
+        transform: rotate(45deg);
+        animation: animate 4s infinite;
+
+
+      }
+      span:nth-child(1){
+        animation-delay: -0.2s;
+        animation-timing-function: ease-in-out;
+
+      }
+      span:nth-child(2){
+        animation-delay: -0.4s;
+        animation-timing-function: ease-in-out;
+
+      }
+
+    @keyframes animate
+    {
+      0%{
+        opacity: 0.5;
+        transform: rotate(45deg)translate(0px, 0px);
+      }
+
+      50%{
+        opacity: 1;
+          transform: rotate(45deg)translate(8px, 8px);
+      }
+
+      100%{
+        opacity: 0.5;
+        transform: rotate(45deg)translate(0px, 0px);
+      }
+    }
+
+  }
+    .sellImgwrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      top: 0;
+
+       .sellImgHeader{
+         font-size: 55px;
+         color: $light;
+
+       }
+    }
+    }
+
+}
+
+//--------
+//--------Footer
+footer {
+    background-color: #231F20;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  a{
+      color: #ffffff;
+  }
+  a:hover{
+      color: $gd;
+      text-decoration: none;
+  }
+  nav{
+
+    .links{
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+        a{
+
+        }
+    }
+  }
+  .copyright{
+      color: #ffff;
+      font-size: 13px;
+      display: flex;
+      position:absolute;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      a{
+        color: #ffff;
+      }
+      a:hover{
+          color: $gd;
+          text-decoration: none;
+      }
+    }
+
+    .socialWrap{
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .social{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        h1{
+          color: $gd;
+        }
+
+        a{
+
+        }
+
+      }
+
+
+    }
+
+}
+
+//--------
 .right-panel {
         font-family: 'Roboto','sans-serif';
         line-height: 30px;
@@ -1259,76 +1513,7 @@ object-fit: cover;
   }
 }
 
-footer {
-    background-color: #231F20;
-    height: 130px;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 
-
-
-  a{
-      color: #ffffff;
-  }
-
-  a:hover{
-      color: $gd;
-      text-decoration: none;
-  }
-  nav{
-
-
-
-
-    ul{
-
-      li{
-
-        font-size: 13px;
-        list-style-type: none;
-
-      }
-    }
-  }
-  .copyright{
-
-
-
-
-
-
-
-      color: #ffff;
-      font-size: 13px;
-
-      a{
-        color: #ffff;
-      }
-      a:hover{
-          color: $gd;
-          text-decoration: none;
-      }
-    }
-
-    .socialWrap{
-
-
-
-
-
-      .social{
-
-        display: inline-block;
-        margin-left: 15px;
-
-      }
-
-
-    }
-
-}
 
 .side-bar-wrap{
   display: flex;

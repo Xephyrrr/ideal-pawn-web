@@ -5,19 +5,19 @@ function Footer() {
   return(
     <footer>
     <nav>
-      <ul>
-        <li>
+      <div className='links'>
+
           <a href="/">Wholesale Info</a>
-        </li>
-        <li>
+
+      
           <a href="/">Careers</a>
-        </li>
-        <li>
+      
+      
           <a href="/Policies">Policies</a>
-        </li>
+  
 
 
-      </ul>
+      </div>
   </nav>
 
 

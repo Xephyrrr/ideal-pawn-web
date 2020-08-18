@@ -23,6 +23,7 @@ import LoanPage from './Components/pages/loanPage';
 import FirearmsPage from './Components/pages/firearmsPage';
 import About from './Components/pages/aboutPage';
 import { AnimatePresence } from 'framer-motion';
+import SellPage from './Components/pages/sellPage';
 
 
 
@@ -55,6 +56,7 @@ function App() {
                   <Route exact={true} path='/register' component={Register} />
                   <Route exact={true} path='/loans' component={LoanPage} />
                   <Route exact={true} path='/firearms' component={FirearmsPage} />
+                  <Route exact={true} path='/sell' component={SellPage} />
                 </Switch>
 
               </AnimatePresence>

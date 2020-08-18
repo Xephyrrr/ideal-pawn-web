@@ -7,34 +7,35 @@ function SocialPic() {
 
 
       <div className="social">
-      <SocialMediaIconsReact
+        <a href=''><h1>@idealpawnandjewelry</h1></a>
 
-      icon="facebook" iconColor="rgba(255,255,255,1)"
-      backgroundColor="rgba(10,32,21,0)"
-      iconSize="2"
-      url="https://www.facebook.com/idealpawnandjewelry/"
-      size="39" />
+        <SocialMediaIconsReact
 
-      <div className="social">
-      <SocialMediaIconsReact
-      icon="yelp"  iconColor="rgba(255,255,255,1)"
-      backgroundColor="rgba(10,32,21,0)"
-      iconSize="2"
-      url="https://www.facebook.com/idealpawnandjewelry/"
-      size="39" />
-
-      <div className="social">
-      <SocialMediaIconsReact
-      icon="instagram"  iconColor="rgba(255,255,255,1)"
-      backgroundColor="rgba(10,32,21,0)"
-      iconSize="2"
-      url="https://www.facebook.com/idealpawnandjewelry/"
-      size="39" />
-
-
-        </div>
-       </div>
+        icon="facebook" iconColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(10,32,21,0)"
+        iconSize="2"
+        url="https://www.facebook.com/idealpawnandjewelry/"
+        size="39" />
       </div>
+      <div className="social">
+        <h1>Check out some reviews!</h1>
+        <SocialMediaIconsReact
+        icon="yelp"  iconColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(10,32,21,0)"
+        iconSize="2"
+        url="https://www.yelp.com/biz/ideal-pawn-and-jewelry-doraville"
+        size="39" />
+     </div>
+      <div className="social">
+        <h1>idealpawn</h1>
+        <SocialMediaIconsReact
+        icon="instagram"  iconColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(10,32,21,0)"
+        iconSize="2"
+        url="https://www.instagram.com/idealpawn/"
+        size="39" />
+      </div>
+
     </div>
 
 
